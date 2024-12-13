@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Cheat Sheet</title>
+    <link rel="stylesheet" href="javaCheatSheet.css">
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript Cheat Sheet</h1>
+        <p>This cheat sheet is a guide to the basic and essential JavaScript syntax and concepts for beginners.</p>
+    </header>
+
+    <section id="variables">
+        <h2>Variables</h2>
+        <p>In JavaScript, we can store data in variables using <code>var</code>, <code>let</code>, or <code>const</code>.</p>
+        <pre><code>
+let name = "John";   // using let (can be reassigned)
+const age = 25;      // using const (cannot be reassigned)
+var city = "New York"; // using var (older approach)
+        </code></pre>
+        <p>Example:</p>
+        <pre><code>
+console.log(name); // Output: John
+console.log(age);  // Output: 25
+        </code></pre>
+    </section>
+
+    <section id="data-types">
+        <h2>Data Types</h2>
+        <p>JavaScript has several data types including strings, numbers, booleans, arrays, objects, etc.</p>
+        <pre><code>
+let string = "Hello World";   // String
+let number = 42;              // Number
+let isActive = true;          // Boolean
+let colors = ["Red", "Green", "Blue"]; // Array
+let person = { name: "John", age: 30 }; // Object
+        </code></pre>
+    </section>
+
+    <section id="functions">
+        <h2>Functions</h2>
+        <p>A function is a block of code designed to perform a particular task.</p>
+        <pre><code>
+function greet(name) {
+    return "Hello, " + name;
+}
+
+console.log(greet("John")); // Output: Hello, John
+        </code></pre>
+    </section>
+
+    <section id="conditionals">
+        <h2>Conditionals</h2>
+        <p>Conditionals are used to perform different actions based on different conditions. We use <code>if</code>, <code>else</code>, and <code>else if</code>.</p>
+        <pre><code>
+let number = 10;
+
+if (number > 5) {
+    console.log("Greater than 5");
+} else {
+    console.log("Less than or equal to 5");
+}
+        </code></pre>
+        <p>Output: Greater than 5</p>
+    </section>
+
+    <section id="loops">
+        <h2>Loops</h2>
+        <p>Loops are used to execute the same code repeatedly until a condition is met. Common loops include <code>for</code> and <code>while</code>.</p>
+        <pre><code>
+// For loop
+for (let i = 0; i < 5; i++) {
+    console.log(i); // Output: 0 1 2 3 4
+}
+
+// While loop
+let count = 0;
+while (count < 5) {
+    console.log(count); // Output: 0 1 2 3 4
+    count++;
+}
+        </code></pre>
+    </section>
+
+    <section id="arrays">
+        <h2>Arrays</h2>
+        <p>An array is a special variable that can hold multiple values at once.</p>
+        <pre><code>
+let fruits = ["Apple", "Banana", "Cherry"];
+
+console.log(fruits[0]); // Output: Apple
+
+fruits.push("Orange");   // Adds Orange to the array
+console.log(fruits); // Output: ["Apple", "Banana", "Cherry", "Orange"]
+        </code></pre>
+    </section>
+
+    <section id="objects">
+        <h2>Objects</h2>
+        <p>Objects are collections of key-value pairs and are used to store related data.</p>
+        <pre><code>
+let person = {
+    name: "John",
+    age: 30,
+    greet: function() {
+        return "Hello " + this.name;
+    }
+};
+
+console.log(person.name);  // Output: John
+console.log(person.greet()); // Output: Hello John
+        </code></pre>
+    </section>
+
+    <section id="events">
+        <h2>Events</h2>
+        <p>Events are actions that occur in the browser, such as a user clicking a button or pressing a key. You can add event listeners to elements to handle events.</p>
+        <pre><code>
+document.getElementById("button").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+        </code></pre>
+        <button id="button">Click Me</button>
+    </section>
+
+    <section id="dom">
+        <h2>DOM Manipulation</h2>
+        <p>The DOM (Document Object Model) represents the structure of an HTML document. JavaScript can be used to manipulate it, changing content, structure, or style.</p>
+        <pre><code>
+// Changing text content
+document.getElementById("demo").textContent = "New Text!";
+
+// Changing styles
+document.getElementById("demo").style.color = "blue";
+        </code></pre>
+        <p id="demo">This is a demo text.</p>
+    </section>
+
+    <section id="debugging">
+        <h2>Debugging</h2>
+        <p>Use <code>console.log()</code> to display values in the console for debugging.</p>
+        <pre><code>
+let x = 10;
+console.log(x); // Output: 10
+        </code></pre>
+    </section>
+
+</body>
+</html>
